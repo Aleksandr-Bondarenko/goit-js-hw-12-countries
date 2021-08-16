@@ -44,8 +44,7 @@ const renderMarkup = (arrayData) => {
   }
 };
 
-const err = (arrayData) => {
-  console.log(arrayData);
+const err = () => {
   errorCall("Enter a country name!");
 };
 
