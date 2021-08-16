@@ -14,10 +14,12 @@ const errorCall = (errText) => {
     mode: "light",
     icon: true,
     delay: 3000,
-    width: "300px",
+    width: "400px",
+    maxTextHeight: null,
     closerHover: false,
     sticker: false,
   };
+
   const myError = error(option);
 };
 

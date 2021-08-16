@@ -1,0 +1,68 @@
+body {
+  font-family: "Teko", sans-serif;
+  background-image: url("./images/img-world.jpg");
+  background-repeat: no-repeat;
+  background-position: 20% 0%;
+  background-size: cover;
+}
+
+.main-title {
+  margin-top: 120px;
+  text-align: center;
+
+  font-size: 60px;
+  font-weight: 700;
+  color: rgb(230, 7, 7);
+}
+
+.input-field {
+  display: block;
+  margin-top: 50px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 15px;
+  border-color: rgb(230, 7, 7);
+  padding: 10px;
+}
+
+.countries-list {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: red;
+
+  li {
+    font-size: 25px;
+  }
+}
+
+.card {
+  color: red;
+  margin-top: 20px;
+
+  &__title {
+    background: teal;
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__inform {
+    margin-right: 40px;
+    font-size: 20px;
+  }
+
+  &__img {
+    border-color: red;
+    flex-grow: 0;
+    display: block;
+    height: 150px;
+  }
+}

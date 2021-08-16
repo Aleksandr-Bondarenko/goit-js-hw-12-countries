@@ -5,21 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="data:," />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Country Finder</title>
   </head>
   <body>
-    <form>
-      <label>
-        Enter the Country name
-        <input
-          type="text"
-          name="country"
-          id="country-input"
-          placeholder="Country"
-        />
-      </label>
-    </form>
-    <div id="countries-container"></div>
+    <h1 class="main-title">Search information about country</h1>
+    <input
+      class="input-field"
+      type="text"
+      name="country"
+      id="country-input"
+      placeholder="Name country"
+      autofocus
+    />
+
+    <div class="card" id="countries-container"></div>
     <script src="index.js"></script>
   </body>
 </html>

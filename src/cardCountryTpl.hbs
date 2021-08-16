@@ -1,10 +1,14 @@
-<h2>{{name}}</h2>
-<p>Capital: {{capital}}</p>
-<p>Population: {{population}}</p>
-<p>Languages:</p>
-<ul>
-  {{#each languages}}
-    <li>{{this.name}}</li>
-  {{/each}}
-</ul>
-<img src={{flag}} alt={{name}} width="150" height="auto" />
+<h2 class="card__title">{{name}}</h2>
+<div class="card__box">
+  <div class="card__inform">
+    <p>Capital: {{capital}}</p>
+    <p>Population: {{population}}</p>
+    <p>Languages:</p>
+    <ul>
+      {{#each languages}}
+        <li>{{this.name}}</li>
+      {{/each}}
+    </ul>
+  </div>
+  <img class="card__img" src={{flag}} alt={{name}} width="200" height="auto" />
+</div>

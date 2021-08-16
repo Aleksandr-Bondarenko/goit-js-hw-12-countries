@@ -1,0 +1,74 @@
+body {
+  font-family: "Teko", sans-serif;
+  background-image: url("./images/img-world.jpg");
+  background-repeat: no-repeat;
+  background-position: 20% 0%;
+  background-size: cover;
+}
+
+.main-title {
+  margin-top: 120px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  color: #e60707;
+}
+
+.input-field {
+  display: block;
+  margin-top: 50px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 15px;
+  border-color: #e60707;
+  padding: 10px;
+}
+
+.countries-list {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: red;
+}
+
+.countries-list li {
+  font-size: 25px;
+}
+
+.card {
+  color: red;
+  margin-top: 20px;
+}
+
+.card__title {
+  background: teal;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 25px;
+}
+
+.card__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card__inform {
+  margin-right: 40px;
+  font-size: 20px;
+}
+
+.card__img {
+  border-color: red;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  display: block;
+  height: 150px;
+}
+/*# sourceMappingURL=style.css.map */
