@@ -29,7 +29,12 @@ const refs = {
 };
 
 const onInputCountryName = (event) => {
-  fetchCountries(event.target.value).then(renderMarkup).catch(err);
+  const inputValue = event.target.value.trim();
+
+  if (inputValue.length >= 1) {
+    fetchCountries(event.target.value).then(renderMarkup).catch(err);
+  }
+  refs.markupContainer.innerHTML = "";
 };
 
 const renderMarkup = (arrayData) => {
@@ -45,7 +50,7 @@ const renderMarkup = (arrayData) => {
 };
 
 const err = () => {
-  errorCall("Enter a country name!");
+  errorCall("Country not found. Please, enter another query!");
 };
 
 refs.countryInput.addEventListener("input", debounce(onInputCountryName, 500));
